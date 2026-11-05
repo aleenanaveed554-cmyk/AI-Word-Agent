@@ -27,6 +27,36 @@ except ImportError:
 # =========================================================
 
 st.set_page_config(
+   st.markdown("""
+<style>
+.stApp {
+    background-color: #0B1120;
+    color: white;
+}
+
+h1, h2, h3, p, label, span {
+    color: white !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #111827;
+}
+
+.stButton > button {
+    background: linear-gradient(90deg, #2563EB, #9333EA);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+[data-testid="stMetric"] {
+    background-color: #1E293B;
+    padding: 15px;
+    border-radius: 12px;
+}
+</style>
+""", unsafe_allow_html=True)
     page_title="AI Word Agent",
     page_icon="📝",
     layout="wide",
